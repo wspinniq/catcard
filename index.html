@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#101625">
-<meta name="description" content="貓咪直覺神諭卡：36 張貓咪命運牌，融合雷諾曼的組合聯想與神諭卡的溫暖指引。">
-<title>貓咪直覺神諭卡｜36 Cats Oracle</title>
+<meta name="description" content="貓咪老師直覺神諭卡：36 張貓咪老師命運牌，融合雷諾曼的組合聯想與神諭卡的溫暖指引。">
+<title>貓咪老師直覺神諭卡｜36 Cats Oracle</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1321;--panel:#1b263a;--panel2:#222e44;--text:#f9f1e5;--sub:#abb6c7;--gold:#e7bf79;--hair:#39445c;--peach:#f0b2a0;--violet:#baadea;--rose:#eaa8bd;--teal:#8dd5c2}
 *{box-sizing:border-box}html{min-height:100%;scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;min-height:100dvh;font-family:ui-sans-serif,system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;background:radial-gradient(ellipse 520px 400px at 50% -40px,#253251 0%,transparent 80%),radial-gradient(ellipse 370px 350px at 5% 65%,#1a2039 0%,transparent 90%),var(--bg);color:var(--text);overflow-x:hidden}
@@ -175,10 +175,10 @@ function reflectionFor(picks){const c=picks[picks.length-1];const options=[
  `不替你決定對錯，只想問你：什麼選擇會讓自己更安心？`
  ];return options[c.id%3]}
 function readingText(picks,topic,mode,question){
- let lines=[`貓咪直覺神諭卡｜${modes[mode][0]}`,`提問：${question||'今天，我需要留意什麼？'}`];
+ let lines=[`貓咪老師直覺神諭卡｜${modes[mode][0]}`,`提問：${question||'今天，我需要留意什麼？'}`];
  picks.forEach((c,i)=>lines.push(`${modes[mode][1][i]}｜${num(c.id)} ${c.name}\n${roleInterpretation(c,modes[mode][1][i],topic)}`));
  if(picks.length>1){lines.push('卡牌之間的訊息');for(let i=0;i<picks.length-1;i++)lines.push(`${picks[i].name} × ${picks[i+1].name}：${pairText(picks[i],picks[i+1])}`)}
- lines.push('整體解讀：'+overviewFor(picks,topic));lines.push('貓咪的心聲：'+picks[picks.length-1].quote);lines.push('留給你的提問：'+reflectionFor(picks));return lines.join('\n\n');
+ lines.push('整體解讀：'+overviewFor(picks,topic));lines.push('貓咪老師的心聲：'+picks[picks.length-1].quote);lines.push('留給你的提問：'+reflectionFor(picks));return lines.join('\n\n');
 }
 // 正式卡圖讀取方式：將 card01.png / card02.jpg / card03.jpeg ... 放在 HTML 相同資料夾。
 // Chrome 不允許一般網頁直接列出檔案夾，故依序嘗試支援的副檔名，不需要伺服器 API。
@@ -229,14 +229,14 @@ function hydrateCardImages(root=document){
   });
  });
 }
-function header(){return `<div class="stars"></div><header class="topbar"><div class="brand"><div class="mark" aria-hidden="true">☾</div><div><div class="brand-name">貓咪直覺神諭卡</div><div class="brand-sub">36 CATS ORACLE</div></div></div><span class="top-pill">✦ 36 張命運牌</span></header>`}
+function header(){return `<div class="stars"></div><header class="topbar"><div class="brand"><div class="mark" aria-hidden="true">☾</div><div><div class="brand-name">貓咪老師直覺神諭卡</div><div class="brand-sub">36 CATS ORACLE</div></div></div><span class="top-pill">✦ 36 張命運牌</span></header>`}
 function setupView(){return `
  <div class="eyebrow">⋆˚✦　THE CAT KNOWS　✦˚⋆</div>
- <h1 class="heading serif">今天，聽聽貓咪<br>想對你說什麼</h1>
- <p class="intro">36 張貓咪神諭卡，將生活裡的每個小動作，<br>變成一份溫柔的直覺提醒。</p>
+ <h1 class="heading serif">今天，聽聽貓咪老師<br>想對你說什麼</h1>
+ <p class="intro">36 張神諭卡，將生活裡的每個小動作，<br>變成一份溫柔的直覺提醒。</p>
  <div class="hero-art"><div class="halo"></div><div class="orbit"></div><div class="hero-back1"></div><div class="hero-back2"></div><div class="hero-card"><span class="hero-loading">loading</span></div></div>
  <section class="panel" aria-label="開始占卜設定">
- <label class="form-label" for="question">✧ 想向貓咪提出什麼問題？</label>
+ <label class="form-label" for="question">✧ 想向老師提出什麼問題？</label>
  <textarea id="question" placeholder="例如：我現在適合轉換工作方向嗎？\n也可以留白，領取今天的直覺啟示。" maxlength="240">${escapeHtml(state.question)}</textarea>
  <div class="section-label" style="margin:14px 1px 5px">提問主題</div>
  <div class="chips">${topics.map(([key,name])=>`<button class="chip ${key===state.topic?'active':''}" data-action="topic" data-topic="${key}" aria-pressed="${key===state.topic}">${name}</button>`).join('')}</div>
@@ -256,13 +256,13 @@ function pickView(){return `
  <div class="deck-count" aria-live="polite">已選擇 <b id="selected-count">${state.selected.length}</b> / ${state.mode} 張</div>
  <div class="picked-strip" id="selection-tray">${selectionTray()}</div>
  <div class="deck-grid" aria-label="36 張面朝下的神諭卡">${state.deck.map((cardId,i)=>`<button class="pick-card ${state.selected.includes(cardId)?'selected':''}" data-action="pick" data-id="${cardId}" aria-label="選取第 ${i+1} 個卡牌位置" aria-pressed="${state.selected.includes(cardId)}"><span class="paw" aria-hidden="true">♣</span></button>`).join('')}</div>
- <button id="reveal-btn" class="primary" data-action="reveal" ${state.selected.length===state.mode?'':'disabled'}>揭開貓咪的啟示　✧</button>
+ <button id="reveal-btn" class="primary" data-action="reveal" ${state.selected.length===state.mode?'':'disabled'}>揭開貓咪老師的啟示　✧</button>
  <div style="display:flex;justify-content:space-evenly;margin:9px 0 0"><button class="line-link" data-action="clear-pick">重新選牌</button><button class="line-link" data-action="reshuffle">重新洗牌</button></div>
  <p class="note">每一次都從 36 張牌中不重複抽取。<br>點選已選取的卡牌可取消選擇。</p>`}
 function faceCard(c,i,role){return `<button class="face-item" data-action="detail" data-id="${c.id}" style="--delay:${i*120}ms" aria-label="查看 ${c.name} 的完整牌義"><div class="face-number">NO. ${num(c.id)}</div>${cardArt(c)}<div class="face-name">${escapeHtml(c.name)}</div><div class="face-role">${escapeHtml(role)}</div></button>`}
 function resultView(){const picks=state.result,roles=modes[state.mode][1];if(!picks.length)return setupView();
  const pairBlocks=picks.slice(0,-1).map((a,i)=>`<div class="pair-block"><div class="pair-name">${escapeHtml(a.name)}　×　${escapeHtml(picks[i+1].name)}</div>${escapeHtml(pairText(a,picks[i+1]))}</div>`).join('');
- return `<div class="eyebrow">✧ YOUR CAT ORACLE ✧</div><h1 class="heading-sm serif">貓咪的命運啟示</h1>
+ return `<div class="eyebrow">✧ YOUR CAT ORACLE ✧</div><h1 class="heading-sm serif">貓咪老師的命運啟示</h1>
  <div class="center"><span class="topic-flag">${escapeHtml(topicName(state.topic))} ・ ${state.mode} 張牌</span></div>
  <p class="intro" style="margin-top:10px">${state.question?`「${escapeHtml(state.question)}」`:'「今天，我需要留意什麼？」'}</p>
  <div class="face-grid ${picks.length===1?'one':''}">${picks.map((c,i)=>faceCard(c,i,roles[i])).join('')}</div>
@@ -272,7 +272,7 @@ function resultView(){const picks=state.result,roles=modes[state.mode][1];if(!pi
  ${picks.length>1?`<div class="space-sm"></div><section class="read-block"><div class="read-title">✦　卡牌之間的悄悄話</div>${pairBlocks}</section>`:''}
  <div class="space-sm"></div><section class="read-block"><div class="read-title">✦　屬於你的整體啟示</div><p>${escapeHtml(overviewFor(picks,state.topic))}</p><div class="summary-quote">「${escapeHtml(picks[picks.length-1].quote)}」</div><p><strong style="color:#f0d4a1">留給你的問題：</strong>${escapeHtml(reflectionFor(picks))}</p></section>
  <div class="space"></div><div class="result-actions" aria-label="占卜操作"><button class="secondary" data-action="copy">複製解讀文字</button><button class="primary" data-action="restart">再次抽牌　✦</button></div>
- <p class="note">貓咪指引提供的是探索角度，不代表確定事件或必然結果。<br>涉及醫療、財務等重要選擇，請以專業資訊和現實條件為準。</p>`}
+ <p class="note">貓咪老師指引提供的是探索角度，不代表確定事件或必然結果。<br>涉及醫療、財務等重要選擇，請以專業資訊和現實條件為準。</p>`}
 function render(){document.getElementById('app').innerHTML=header()+`<main>${state.stage==='setup'?setupView():state.stage==='pick'?pickView():resultView()}</main>`;hydrateCardImages()}
 function topScroll(){window.scrollTo({top:0,behavior:'instant'})}
 function showToast(message){document.querySelectorAll('.toast').forEach(el=>el.remove());let el=document.createElement('div');el.className='toast';el.textContent=message;document.body.appendChild(el);setTimeout(()=>el.remove(),2600)}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101625">
+<meta name="description" content="貓咪直覺神諭卡：36 張貓咪命運牌，融合雷諾曼的組合聯想與神諭卡的溫暖指引。">
+<title>貓咪直覺神諭卡｜36 Cats Oracle</title>
+<style>
+:root{color-scheme:dark;--bg:#0d1321;--panel:#1b263a;--panel2:#222e44;--text:#f9f1e5;--sub:#abb6c7;--gold:#e7bf79;--hair:#39445c;--peach:#f0b2a0;--violet:#baadea;--rose:#eaa8bd;--teal:#8dd5c2}
+*{box-sizing:border-box}html{min-height:100%;scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;min-height:100dvh;font-family:ui-sans-serif,system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;background:radial-gradient(ellipse 520px 400px at 50% -40px,#253251 0%,transparent 80%),radial-gradient(ellipse 370px 350px at 5% 65%,#1a2039 0%,transparent 90%),var(--bg);color:var(--text);overflow-x:hidden}
+button,input,textarea,select{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--gold)}
+#app{max-width:520px;min-height:100dvh;margin:auto;position:relative;padding-bottom:calc(22px + env(safe-area-inset-bottom));background:linear-gradient(175deg,rgba(37,50,73,.18),rgba(8,14,26,.1));box-shadow:0 0 70px #0002}
+.stars{position:absolute;inset:0 0 auto;pointer-events:none;height:400px;overflow:hidden;background-image:radial-gradient(circle,#c2a783b3 .6px,transparent 1.2px),radial-gradient(circle,#e6d4bb77 .7px,transparent 1.3px);background-size:87px 91px,131px 127px;background-position:0 5px,23px 41px;mask-image:linear-gradient(black,transparent)}
+.topbar{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;padding:calc(19px + env(safe-area-inset-top)) 23px 16px;gap:12px}.brand{display:flex;align-items:center;gap:11px;min-width:0}.mark{width:39px;height:39px;border:1px solid #a79164;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#314365,#182136);box-shadow:inset 0 0 0 3px #1c2940;color:var(--gold);font-size:23px}.brand-name{font-family:Georgia,"Noto Serif TC",serif;font-size:16px;letter-spacing:1.1px;white-space:nowrap}.brand-sub{font-size:9px;letter-spacing:2px;color:var(--gold);margin-top:2px}.top-pill{font-size:10px;white-space:nowrap;color:var(--gold);border:1px solid #806d51;border-radius:30px;padding:7px 9px;letter-spacing:1px}
+main{position:relative;z-index:1;padding:0 20px 16px}.serif{font-family:"Noto Serif TC",Georgia,serif}.eyebrow{text-align:center;letter-spacing:3px;font-size:10px;color:var(--gold);text-transform:uppercase}.heading{text-align:center;font-size:clamp(27px,7.5vw,38px);font-weight:650;letter-spacing:2px;line-height:1.35;margin:13px 0 10px}.heading-sm{text-align:center;font-size:27px;letter-spacing:1.5px;margin:12px 0 8px}.muted{color:var(--sub)}.intro{text-align:center;color:#bdc5d2;font-size:13px;line-height:1.95;margin:0 auto;max-width:360px}.small{font-size:12px}.xs{font-size:11px}.center{text-align:center}.space{height:20px}.space-sm{height:11px}
+.hero-art{position:relative;height:292px;display:grid;place-items:center;margin:7px auto 13px;overflow:hidden}.halo{position:absolute;width:265px;height:265px;border-radius:50%;background:radial-gradient(circle,#c7a2652c 0 33%,#7771a012 53%,transparent 74%);box-shadow:0 0 90px #b58f4a17}.orbit{position:absolute;width:243px;height:243px;border:1px solid #d2ad6945;border-radius:50%;transform:rotate(-25deg)}.orbit:before,.orbit:after{content:'✦';position:absolute;color:var(--gold);font-size:14px;top:4px;left:45px}.orbit:after{top:auto;bottom:9px;left:auto;right:39px;font-size:10px}.hero-card{width:159px;height:254px;border:2px solid var(--gold);border-radius:13px;background:linear-gradient(135deg,#3b4a71,#1a283e 65%);transform:rotate(-8deg);box-shadow:14px 19px 29px #0009,0 0 38px #dfa96e22;position:relative;overflow:hidden;display:grid;place-items:center}.hero-card:before{content:'';position:absolute;inset:8px;border:1px solid #b89b6eb8;border-radius:7px}.hero-card:after{content:'✧　✦　✧';position:absolute;bottom:22px;color:#d5b980;font-size:11px;letter-spacing:4px}.hero-card svg{width:106px;filter:drop-shadow(0 0 8px #deb66b33)}.hero-back1,.hero-back2{position:absolute;width:159px;height:254px;border:1px solid #a58b60;border-radius:13px;background:linear-gradient(135deg,#2d3c5b,#192237);box-shadow:8px 14px 26px #0006}.hero-back1{transform:translate(-20px,3px) rotate(-19deg)}.hero-back2{transform:translate(25px,0) rotate(9deg)}
+.panel{background:linear-gradient(145deg,#202b3f,#182338);border:1px solid #3d465c;border-radius:20px;padding:18px;box-shadow:0 14px 30px #05091532}.form-label{font-size:13px;color:#f4e7cf;font-weight:700;display:block;margin:0 0 9px}.hint{font-size:11px;color:var(--sub);line-height:1.7}textarea{width:100%;resize:vertical;min-height:88px;border-radius:12px;border:1px solid #49566f;background:#111b2d;color:var(--text);padding:13px;line-height:1.7;font-size:14px;outline:none}textarea::placeholder{color:#8593a9}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.chip{border:1px solid #48556e;color:#aebace;background:#1a2539;padding:9px 11px;border-radius:40px;font-size:12px;min-height:38px}.chip.active{color:#1d283b;background:var(--gold);border-color:var(--gold);font-weight:750}.section-label{font-size:12px;color:var(--gold);letter-spacing:1.5px;margin:19px 2px 10px}.mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.mode{background:#172237;border:1px solid #46516b;border-radius:14px;padding:12px 5px 11px;min-width:0;color:var(--text);text-align:center}.mode.active{border-color:var(--gold);background:linear-gradient(145deg,#35415c,#232f47);box-shadow:inset 0 0 0 1px #c59d55aa}.mode-symbol{font-family:Georgia,serif;font-size:21px;letter-spacing:2px;color:#ddc18e;margin-bottom:5px;height:29px}.mode-title{font-size:13px;font-weight:700}.mode-sub{font-size:10px;color:#b8c1d1;margin-top:4px}.primary{border:0;border-radius:14px;width:100%;padding:15px 20px;background:linear-gradient(110deg,#efce90,#cba46b);color:#1f2735;font-size:15px;font-weight:800;letter-spacing:1px;min-height:53px;box-shadow:0 9px 18px #0d0e1670, inset 0 1px #fff8}.primary:active{transform:scale(.991)}.secondary{width:100%;min-height:45px;border:1px solid #7c6c57;color:var(--gold);border-radius:12px;background:#233047;font-size:13px;padding:11px}.line-link{background:none;border:0;color:#c3b18e;text-decoration:underline;text-underline-offset:3px;font-size:12px;padding:10px}.note{text-align:center;color:#8793a8;font-size:11px;line-height:1.85;margin:16px 7px}
+.progress-bar{height:5px;border-radius:10px;background:#344055;overflow:hidden;margin:17px auto 10px;max-width:310px}.progress-bar>div{height:100%;background:linear-gradient(90deg,#b38d60,#edd39b);transition:width .25s}.deck-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px 6px;margin:18px 0 14px}.pick-card{aspect-ratio:3/4.25;min-height:65px;min-width:0;border-radius:8px;background:linear-gradient(145deg,#384b6f,#1c2c47);border:1px solid #998466;box-shadow:0 4px 7px #050a144d;position:relative;padding:4px;transition:transform .2s,border-color .2s,filter .2s}.pick-card:before{content:'';position:absolute;inset:4px;border:1px solid #a89a815d;border-radius:4px}.pick-card:after{content:'✦';position:absolute;top:7px;right:8px;font-size:7px;color:#d5b782}.pick-card .paw{font-size:22px;display:block;color:#edd49f;filter:grayscale(.15);text-shadow:0 0 10px #f0d09b55}.pick-card .paw:after{content:'☾';display:block;font-size:12px;line-height:1}.pick-card.selected{border-color:#fff0bf;background:linear-gradient(145deg,#8b6e69,#423d61);transform:translateY(-3px);box-shadow:0 0 0 2px #f1c88370,0 0 13px #e4bb7b7d}.pick-card.selected:after{content:'✓';top:4px;right:7px;font-size:14px;font-weight:900}.picked-strip{display:flex;justify-content:center;gap:8px;align-items:center;min-height:53px;margin:10px 0 16px}.picked-slot{border:1px dashed #60718b;border-radius:9px;width:49px;height:65px;display:grid;place-items:center;color:#8fa0b9;font-size:18px}.picked-slot.filled{border:1px solid #deb77e;background:linear-gradient(145deg,#4b4166,#283550);color:#f5d79b;box-shadow:0 0 13px #dfb97535}.deck-count{color:#e4c58c;font-size:13px;text-align:center}.deck-count b{font-size:21px}
+.reading-card{border:1px solid #576079;background:linear-gradient(155deg,#293650,#1b263d);border-radius:19px;padding:11px;overflow:hidden;box-shadow:0 10px 28px #05080f66}.reading-card .index{font-size:10px;letter-spacing:2px;color:#dbc187;text-align:center;margin:2px 0 8px}.art{width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:12px;background:#2b3854;display:block}.art svg{width:100%;height:100%;display:block}.reading-card h3{font-size:17px;margin:11px 0 7px;letter-spacing:1px}.pill-row{display:flex;gap:5px;flex-wrap:wrap}.tag{font-size:10px;border-radius:20px;padding:5px 8px;background:#37465b;color:#e3cead}.card-advice{font-size:13px;line-height:1.95;color:#d3dbe8;margin:12px 0 2px}.cat-quote{padding:12px 13px;background:#101b2bcc;border-left:2px solid var(--gold);font-size:13px;line-height:1.75;color:#ead5a8;margin:13px 0 0;border-radius:0 8px 8px 0}
+.result-stacked{display:grid;gap:16px;margin:18px 0 16px}.read-block{border:1px solid #44516a;border-radius:17px;padding:18px;background:#172237}.read-title{color:var(--gold);font-size:15px;font-weight:750;margin:0 0 11px}.read-block p{color:#d4dcea;font-size:14px;line-height:2;white-space:pre-wrap;margin:0 0 11px}.read-block p:last-child{margin-bottom:0}.ornament{height:1px;background:linear-gradient(90deg,transparent,#8e8068,transparent);margin:20px 8px}.topic-flag{display:inline-block;font-size:11px;color:#e5c78f;border:1px solid #6e674f;padding:6px 11px;border-radius:30px;margin:4px auto}.pair-block{border-left:2px solid #9a819f;padding:7px 0 7px 13px;margin:12px 0;font-size:13px;line-height:1.9;color:#d8dce9}.pair-name{font-weight:750;color:#e2c391}.summary-lead{font-size:15px;line-height:1.9;color:#f1e7d2}.summary-quote{font-family:Georgia,"Noto Serif TC",serif;font-size:17px;color:#efd39f;text-align:center;line-height:1.8;padding:14px 7px}
+.empty{border:1px dashed #59647a;border-radius:17px;padding:45px 19px;text-align:center;color:#afbed1;line-height:1.9;margin:18px 0}.empty .big{font-size:40px}.modal-overlay{position:fixed;z-index:60;inset:0;background:#050811c9;display:grid;align-items:end;justify-items:center;padding-top:20px}.modal{width:min(100%,520px);max-height:91dvh;overflow:auto;background:#1b263a;border:1px solid #857255;border-radius:23px 23px 0 0;padding:20px 22px calc(28px + env(safe-area-inset-bottom));box-shadow:0 -12px 40px #0008}.modal-grab{width:47px;height:5px;border-radius:10px;background:#6c788c;margin:-9px auto 16px}.modal-close{float:right;background:#33415a;color:#f2e2c8;border:0;border-radius:50%;width:34px;height:34px;font-size:20px}.modal-art{max-width:300px;margin:12px auto}.modal h3{margin:8px 0}.modal p{line-height:1.9;font-size:14px;color:#d6deeb}.toast{position:fixed;z-index:99;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom));border:1px solid #9b845b;border-radius:35px;background:#303647;color:#fbe2b0;padding:12px 17px;font-size:12px;max-width:90vw;box-shadow:0 10px 30px #0009;pointer-events:none;animation:floatIn .3s ease}
+@keyframes floatIn{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}@keyframes cardEnter{from{opacity:0;transform:translateY(25px) rotateY(80deg)}to{opacity:1;transform:translateY(0) rotateY(0)}}.reading-card{animation:cardEnter .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--delay,0ms)}
+@media(max-width:360px){main{padding-left:14px;padding-right:14px}.topbar{padding-left:17px;padding-right:17px}.deck-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.pick-card{min-height:68px}.mode-title{font-size:12px}.brand-name{font-size:14px}}
+@media(min-width:700px){.modal-overlay{align-items:center}.modal{border-radius:23px;max-height:86dvh}.topbar{padding-top:28px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+
+<style>
+.face-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:17px 0}.face-grid.one{grid-template-columns:minmax(0,245px);justify-content:center}.face-item{background:#202e45;border:1px solid #62708a;border-radius:13px;padding:7px;min-width:0;color:var(--text);text-align:center;box-shadow:0 7px 16px #04071044;animation:cardEnter .56s ease both;animation-delay:var(--delay,0ms)}.face-item .art{border:1px solid #9b8b6d;aspect-ratio:1/1.05}.face-number{font-size:10px;color:var(--gold);letter-spacing:1px;margin:8px 0 3px}.face-name{font-size:13px;font-weight:760;line-height:1.3}.face-role{font-size:10px;color:#b7c6d9;margin:5px 0 2px}.role-block{padding:11px 0;border-bottom:1px solid #3a465a}.role-block:last-child{border-bottom:0}.role-head{display:flex;align-items:baseline;gap:7px;margin-bottom:6px;flex-wrap:wrap}.role-count{font-size:10px;color:#e6c485;border:1px solid #997e51;border-radius:9px;padding:3px 7px}.role-head strong{font-size:14px;color:#efdcba}.role-head span:last-child{font-size:12px;color:#b6c1d3}.role-block p{font-size:13px;line-height:1.9;margin:4px 0 0;color:#d5ddeb}.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:11px}.result-actions .secondary{min-height:49px}.micro{font-size:10px;color:#9daabe;line-height:1.7}.label-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}.sheet-card-title{display:flex;align-items:center;gap:10px;margin-bottom:11px}.sheet-card-title .number{font-family:Georgia,serif;font-size:26px;color:var(--gold)}.sheet-card-title .group{font-size:10px;color:#afc0d1}.sheet-card-title h3{font-size:21px;margin:0}.hint-card{padding:12px 13px;background:#101a2b;border:1px solid #3a4a64;border-radius:12px;margin-top:12px}.hint-card strong{font-size:12px;color:#eed3a1}.hint-card p{margin:6px 0 0;font-size:12px}.status-banner{padding:13px;background:#293247;border:1px solid #84744f;border-radius:13px;color:#e6d1af;font-size:13px;text-align:center;line-height:1.7;margin:14px 0}
+
+/* 自動讀取同資料夾的 card01～card36.png/.jpg/.jpeg。保持整張直式卡圖完整顯示。 */
+.art{position:relative}
+.art>.external-card-image{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .18s ease;background:#152136}
+.art.has-external{aspect-ratio:3/4;background:#152136}
+.art.has-external>.external-card-image{opacity:1}
+.art.has-external>svg{visibility:hidden}
+.face-item .art.has-external{aspect-ratio:3/4}
+.modal-art>.art{max-width:310px;margin:12px auto}
+.modal-art>.art.has-external{aspect-ratio:3/4}
+</style>
+</head>
+<body>
+<div id="app"><div class="stars"></div></div>
+<script>
+'use strict';
+const rawCards = [
+[1,'飛撲獵物','壓低身體、瞳孔放大、屁股搖擺準備衝刺的貓','鎖定目標、果斷出擊','時機已到，別再猶豫，專注眼前的目標全力衝刺。','看準目標，就用力撲過去喵！','good'],
+[2,'高處俯瞰','蹲在書櫃或冰箱頂端，冷靜俯視全場的貓','抽離觀察、全局視野','先退一步站高一點看局勢，現在適合冷靜分析而非介入。','跳得高，才看得見更多可能喵。','neutral'],
+[3,'踩奶踏踏','雙眼微瞇、在毛毯上規律踩踏的貓','安心療癒、穩定累積','回到讓你感到安全的人事物身邊，慢慢累積能量。','一下一下踏踏，安心是慢慢長大的喵。','good'],
+[4,'大字仰睡','毫無防備、四腳朝天露出肚皮熟睡的貓','徹底放鬆、信任環境','放下緊繃與控制欲，現在最需要的是好好休息與信任。','天大的事，也先讓我睡個飽喵。','good'],
+[5,'磨爪時刻','抱著貓抓板用力抓撓、留下抓痕的貓','釋放壓力、建立界線','該宣洩累積的煩躁了，同時也要明確劃出自己的底線。','磨爪不是壞脾氣，是在提醒你我的界線喵。','warning'],
+[6,'追逐光點','跳起來試圖抓住牆上雷射筆紅點的貓','好奇探索、小心虛幻','保持玩心去嘗試新事物，但別太執著於抓不住的幻想。','追光很好玩，但別忘了看看光從哪裡來喵。','warning'],
+[7,'鑽進紙箱','只露出一雙眼睛、躲在窄小紙箱裡的貓','自我保護、暫時退隱','外界太吵雜時就先躲起來充電，獨處不是逃避而是重整。','紙箱小小的，卻能裝下我的安全感喵。','neutral'],
+[8,'夜間跑酷','凌晨三點在客廳狂奔、尾巴蓬鬆的貓','突發靈感、能量過剩','內心有一股壓抑不住的衝動或創意，找個健康出口釋放它。','靈感來了，誰還管現在幾點喵！','warning'],
+[9,'優雅理毛','抬起後腳、神情專注舔拭毛髮的貓','打理自己、重整秩序','先把自己照顧好、把生活小事理順，外在混亂自然會平息。','世界很亂？那就先從整理毛毛開始喵。','neutral'],
+[10,'呼嚕引擎','喉嚨震動、臉頰蹭著枕頭一臉滿足的貓','內心富足、頻率對齊','你正處於對的狀態裡，順著這份愉悅與滿足感前進吧。','呼嚕呼嚕，這就是幸福的聲音喵。','good'],
+[11,'炸毛弓背','毛髮豎起、身體側弓、發出低鳴警告的貓','過度防禦、警鈴大作','某件事觸動了你的不安全感，先確認是真實威脅還是過度反應。','炸毛以前，先確認是不是真的有危險喵。','warning'],
+[12,'飛機耳','耳朵往兩側壓平、眼神略帶無奈與緊張的貓','委屈妥協、想逃離現場','你正在勉強自己配合不喜歡的狀況，承認不舒服並不可恥。','耳朵都飛起來了，就別逼我說沒事喵。','warning'],
+[13,'窗邊凝望','坐在窗台看著窗外飛鳥與落葉出神的貓','渴望自由、遠方召喚','心已經飛向別處了，是時候思考新的方向或規劃一趟小旅行。','窗外那麼大，也許有我還沒看過的風景喵。','neutral'],
+[14,'慢眨眼','對著鏡頭緩慢閉上雙眼又張開的溫柔表情','善意和平、無聲的愛','釋出善意吧！你身邊有值得信賴的人，用溫柔化解隔閡。','慢慢眨眼，就是我最溫柔的告白喵。','good'],
+[15,'哈氣警告','張嘴露出小尖牙、對空氣哈氣的貓','拒絕妥協、明確說不','對於不合理的要求，請果斷拒絕，不需要當好人。','不喜歡就是不喜歡，哈——喵！','neutral'],
+[16,'翻肚誘惑','側躺露出毛茸茸肚子，但爪子微微張開的貓','若即若離、考驗試探','表面看起來很好親近，其實內心還留有一道防線或條件。','肚子可以看，不代表一定可以摸喵。','neutral'],
+[17,'呆滯放空','眼神失焦、舌頭忘記收回去一小截的貓','腦袋當機、資訊過載','你想太多、大腦過載了！暫停所有思考，允許自己發呆一小時。','腦袋轉不動？那就先放空一下喵。','warning'],
+[18,'夜視瞳孔','在全黑環境中雙眼閃閃發光的貓','敏銳直覺、看穿真相','相信你的第六感，你已經察覺到表面之下的真實意圖。','暗暗的也沒關係，我看得很清楚喵。','good'],
+[19,'互相理毛','兩隻貓靠在一起、彼此舔舐頭頂毛髮','雙向奔赴、互助共好','這是一段健康且互惠的關係，彼此的付出都能得到回應。','你幫我舔頭頂，我也幫你整理煩惱喵。','good'],
+[20,'尾巴勾勾','兩隻貓並肩走過、尾巴尖端輕輕勾在一起','默契陪伴、不需多言','真正的親密不需要時時刻刻黏在一起，各自獨立卻心意相通。','不用一直黏著，尾巴碰一下就懂了喵。','good'],
+[21,'領地標記','用臉頰與下巴用力磨蹭桌角或人腿的貓','歸屬感、宣示主權','確認你重視的人事物，大方展現你的在乎與存在感。','我蹭過的地方，都藏著我的在乎喵。','neutral'],
+[22,'背對背坐','兩隻貓背對背坐著，尾巴各自輕掃地面','各自空間、冷靜期','關係需要一點呼吸的空間，給彼此一點距離反而更和諧。','背對背，不代表心就離得遠喵。','neutral'],
+[23,'搶奪紙箱','兩隻貓擠在同一個小紙箱裡互不相讓','資源競爭、立場衝突','雙方都在爭取同一個位置或話語權，試著尋找雙贏而非硬碰硬。','這個紙箱裝得下兩隻貓嗎？商量看看喵。','warning'],
+[24,'蹭腿撒嬌','繞著人的腳踝打轉、尾巴高高豎起的貓','主動示好、尋求協助','放下矜持，主動向他人示好或開口求助，你會得到溫暖的回應。','想要抱抱，就勇敢蹭過去喵。','good'],
+[25,'門縫偷窺','從半開的門縫探出半顆頭、小心翼翼張望的貓','試探觀察、謹慎靠近','對新環境或新對象保持觀察是好事，慢慢來、不急著全盤托出。','先探出半顆頭，安全了再走出去喵。','warning'],
+[26,'母雞蹲陣','三隻貓整齊排成一排、手手收在胸前母雞蹲','團體共識、靜觀其變','大家都在等一個契機，目前適合順應團隊節奏、靜待變化。','大家一起收好手手，等風向變了再動喵。','neutral'],
+[27,'傲嬌轉頭','身體靠在人身邊，頭卻故意撇向另一邊的貓','口是心非、渴望關注','嘴上說沒關係，其實心裡很在意；試著坦率說出真實需求。','哼，我才沒有在等你摸摸……喵。','warning'],
+[28,'金色罐頭','一個剛拉開拉環、冒著香氣的豪華肉泥罐頭','豐盛獎勵、意外驚喜','好運與實質收穫即將到來，盡情享受你應得的獎賞！','哇！今天竟然開了最喜歡的罐罐喵！','good'],
+[29,'空空食盆','貓坐在見底的飼料碗旁，一臉控訴地盯著看','匱乏焦慮、需要補給','你的精力、資源或耐心已見底，該為自己補充能量或重新議價了。','碗空了不能裝沒看見，你也是喵。','warning'],
+[30,'打翻水杯','貓爪剛把桌邊的玻璃杯推落、水花四濺的瞬間','突發意外、打破僵局','會有意料之外的小插曲打亂計畫，但這也可能是打破沉悶的轉機。','哎呀！事情翻了個面，也許會更有趣喵。','warning'],
+[31,'一束陽光','午後斜陽照在地板上，貓剛好蜷縮在光圈正中央','幸運加持、溫暖順遂','宇宙正在眷顧你，待在讓你感到溫暖明亮的地方，事情會順利推進。','找到那一小塊陽光，就是今天的好運喵。','good'],
+[32,'毛線球陣','滿地纏繞在一起的彩色毛線，貓被困在中間','思緒混亂、越理越亂','越急著解決反而越打結，先停下來找到最初的那個線頭再慢慢解。','越拉越亂？先找到線頭再說喵。','warning'],
+[33,'未關的門','一扇微微敞開的門，門外透出微光，貓站在門檻前','新機會、跨出舒適圈','新的大門已經為你打開，跨出去就能看見不一樣的風景。','門沒關，想去看看就去看看喵。','neutral'],
+[34,'神秘小禮物','貓嘴裡叼著一片葉子或玩具老鼠放在你腳邊','意外收穫、他人心意','有人正在用他的方式對你好，雖然未必完全符合預期，但心意珍貴。','這片葉子送你，是我認真挑選的禮物喵。','good'],
+[35,'貓薄荷派對','貓抱著貓薄荷抱枕在地上打滾、眼神迷茫快樂','暫時抽離、盡情享樂','偶爾允許自己放縱、逃離現實壓力一下，快樂本身就是一種療癒。','人生不只煩惱，也要滾來滾去開心一下喵！','neutral'],
+[36,'貓砂掩埋','貓背對著後方，用後腳用力撥沙覆蓋的動作','過去翻篇、徹底結束','這件事已經過去了，把它埋起來、轉身往前走，別再回頭翻找。','該埋的就埋好，明天還有新罐罐喵。','neutral']
+];
+const groups = [
+  {id:'action',name:'行動與本能',color:'#f1b99d',subtitle:'關於勇氣、節奏與界線'},
+  {id:'emotion',name:'情緒與內在',color:'#c2b2ed',subtitle:'關於感受、直覺與自我理解'},
+  {id:'relation',name:'關係與領地',color:'#f2b6c9',subtitle:'關於陪伴、互動與距離'},
+  {id:'omen',name:'徵兆與日常物件',color:'#e8cd93',subtitle:'關於機會、資源與轉折'}
+];
+const cards = rawCards.map(r=>({id:r[0],name:r[1],scene:r[2],keys:r[3].split('、'),advice:r[4],quote:r[5],tone:r[6],group:Math.floor((r[0]-1)/9)}));
+const getCard=id=>cards.find(c=>c.id===+id);
+const topics=[['general','隨心提問'],['love','感情'],['work','工作'],['money','金錢'],['self','自我成長']];
+const modes={1:['一張啟示',['此刻的提醒']],3:['命運連線',['當下現況','關鍵影響','行動指引']],5:['命運十字',['現在的你','隱藏因素','主要阻礙','可用資源','下一步方向']]};
+const state={stage:'setup',mode:3,topic:'general',question:'',deck:[],selected:[],result:[]};
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))}
+const num=id=>String(id).padStart(2,'0');
+function randomInt(n){if(window.crypto&&crypto.getRandomValues){const a=new Uint32Array(1);const max=Math.floor(4294967296/n)*n;let v;do{crypto.getRandomValues(a);v=a[0]}while(v>=max);return v%n}return Math.floor(Math.random()*n)}
+function shuffle(arr){const result=arr.slice();for(let i=result.length-1;i>0;i--){const j=randomInt(i+1);[result[i],result[j]]=[result[j],result[i]]}return result}
+// 若同資料夾有 card01～card36 的 PNG/JPG/JPEG 正式圖片，優先載入；否則保留原有 SVG 插畫。
+const coats=['#E9AD73','#F6D6AE','#9EACBD','#D4B8A1','#E4C1CB','#B6AA9C','#DBAC7F','#D5D7DE'];
+const svgStroke='#29354b';
+function catHead(x=0,y=0,s=1,coat='#E9AD73',eyes='open',ears='up',blep=false){
+ const eye=eyes==='closed'?`<path d="M-22 -3 Q-16 2 -10 -3 M10 -3 Q16 2 22 -3" fill="none" stroke="${svgStroke}" stroke-width="2.8" stroke-linecap="round"/>`:eyes==='glow'?`<ellipse cx="-16" cy="-2" rx="7" ry="10" fill="#f9e79d"/><ellipse cx="16" cy="-2" rx="7" ry="10" fill="#f9e79d"/><path d="M-16 -9 V5 M16 -9 V5" stroke="#354051" stroke-width="2"/>`:`<ellipse cx="-16" cy="-2" rx="4" ry="6.4" fill="${svgStroke}"/><ellipse cx="16" cy="-2" rx="4" ry="6.4" fill="${svgStroke}"/>`;
+ const e=ears==='flat'?`<path d="M-29 -19 L-50 -27 L-29 -39 M29 -19 L50 -27 L29 -39" fill="${coat}" stroke="${svgStroke}" stroke-width="2.8"/>`:`<path d="M-29 -21 L-31 -58 L-10 -40 L10 -40 L31 -58 L29 -21" fill="${coat}" stroke="${svgStroke}" stroke-width="3" stroke-linejoin="round"/><path d="M-26 -49 L-23 -36 L-13 -35 M26 -49 L23 -36 L13 -35" fill="none" stroke="#cf8e96" stroke-width="3"/>`;
+ return `<g transform="translate(${x} ${y}) scale(${s})">${e}<ellipse cy="-12" rx="34" ry="29" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M-5 9 Q0 14 5 9 M0 5 V10" stroke="${svgStroke}" fill="none" stroke-width="1.8"/><path d="M-6 4 L0 8 L6 4 Z" fill="#c67c84"/>${eye}${blep?'<path d="M-4 13 Q0 23 5 13" fill="#ed969c" stroke="#ad697a" stroke-width="1"/>':''}<path d="M-28 12 L-46 7 M-27 17 L-47 19 M28 12 L46 7 M27 17 L47 19" stroke="${svgStroke}" stroke-width="1.4" stroke-linecap="round"/><path d="M-5 -28 Q0 -21 5 -28" fill="none" stroke="#fff4dc" stroke-opacity=".6" stroke-width="2"/></g>`
+}
+function catFigure(x=120,y=108,scale=1,pose='sit',coat='#E9AD73',options={}){
+ let parts='';const eye=options.eyes||'open',ears=options.ears||'up';
+ if(pose==='sit')parts=`<path d="M24 49 Q79 71 64 16" stroke="${svgStroke}" stroke-width="17" stroke-linecap="round" fill="none"/><path d="M24 49 Q79 71 64 16" stroke="${coat}" stroke-width="12" stroke-linecap="round" fill="none"/><ellipse cx="0" cy="40" rx="39" ry="47" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><ellipse cx="0" cy="48" rx="19" ry="29" fill="#fff0da" opacity=".65"/><ellipse cx="-21" cy="77" rx="18" ry="9" fill="${coat}" stroke="${svgStroke}" stroke-width="2"/><ellipse cx="21" cy="77" rx="18" ry="9" fill="${coat}" stroke="${svgStroke}" stroke-width="2"/>${catHead(0,-21,1,coat,eye,ears,options.blep)}`;
+ else if(pose==='loaf')parts=`<ellipse cx="0" cy="45" rx="60" ry="29" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M25 56 Q70 57 61 27" fill="none" stroke="${coat}" stroke-width="11" stroke-linecap="round"/><ellipse cy="30" rx="33" ry="18" fill="#fff0dc" opacity=".4"/>${catHead(-13,3,.75,coat,eye,ears,options.blep)}`;
+ else if(pose==='sleep')parts=`<path d="M45 44 Q80 10 60 -8" fill="none" stroke="${coat}" stroke-width="14" stroke-linecap="round"/><ellipse cx="7" cy="39" rx="61" ry="34" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><ellipse cx="15" cy="45" rx="37" ry="17" fill="#fff0dc" opacity=".55"/>${catHead(-34,13,.77,coat,'closed',ears)}<path d="M-28 66 Q-2 71 7 60" fill="none" stroke="#f9e6cd" stroke-width="6" stroke-linecap="round"/>`;
+ else if(pose==='back')parts=`<path d="M30 50 Q67 28 55 -20" fill="none" stroke="${coat}" stroke-width="14" stroke-linecap="round"/><ellipse cx="0" cy="39" rx="39" ry="47" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M-32 -20 L-31 -71 L-8 -48 Q0 -54 8 -48 L31 -71 L32 -20 Q0 2 -32 -20" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M-7 -31 Q0 -36 7 -31" fill="none" stroke="#fff4dd" stroke-width="3"/>`;
+ else if(pose==='crouch')parts=`<path d="M-40 43 Q-78 4 -51 -16" fill="none" stroke="${coat}" stroke-width="13" stroke-linecap="round"/><ellipse cx="-8" cy="49" rx="57" ry="26" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><ellipse cx="-28" cy="67" rx="24" ry="10" fill="${coat}" stroke="${svgStroke}" stroke-width="2"/>${catHead(36,27,.75,coat,eye,ears)}<path d="M15 69 L66 74" stroke="${coat}" stroke-width="10" stroke-linecap="round"/>`;
+ else if(pose==='jump')parts=`<g transform="rotate(-24 0 20)"><path d="M-40 29 Q-85 8 -63 -26" fill="none" stroke="${coat}" stroke-width="14" stroke-linecap="round"/><ellipse cx="-5" cy="30" rx="53" ry="28" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M-31 43 L-59 73 M14 45 L40 70" stroke="${coat}" stroke-width="14" stroke-linecap="round"/>${catHead(41,12,.79,coat,eye,ears)}<path d="M37 35 L75 21" stroke="${coat}" stroke-width="12" stroke-linecap="round"/></g>`;
+ else if(pose==='belly')parts=`<path d="M38 26 Q75 25 58 -23" fill="none" stroke="${coat}" stroke-width="13" stroke-linecap="round"/><ellipse cy="37" rx="44" ry="53" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><ellipse cy="38" rx="29" ry="39" fill="#fff2db" opacity=".8"/><path d="M-35 13 L-63 -5 M35 13 L63 -5 M-23 71 L-41 90 M23 71 L41 90" stroke="${coat}" stroke-width="15" stroke-linecap="round"/>${catHead(0,-21,.83,coat,eye,ears)}`;
+ else if(pose==='groom')parts=`<ellipse cx="0" cy="43" rx="45" ry="40" fill="${coat}" stroke="${svgStroke}" stroke-width="3"/><path d="M30 32 Q51 -5 38 -26" stroke="${coat}" stroke-width="13" stroke-linecap="round"/><path d="M-26 54 L-58 -8" stroke="${coat}" stroke-width="14" stroke-linecap="round"/>${catHead(1,-12,.85,coat,'closed',ears)}<path d="M6 18 L-12 40" stroke="#e59ba1" stroke-width="5" stroke-linecap="round"/>`;
+ return `<g transform="translate(${x} ${y}) scale(${scale})">${parts}</g>`;
+}
+const path=(d,fill,stroke=svgStroke,w=2)=>`<path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="${w}" stroke-linejoin="round" stroke-linecap="round"/>`;
+const ellipse=(x,y,rx,ry,fill,stroke='none',w=1)=>`<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${fill}" stroke="${stroke}" stroke-width="${w}"/>`;
+const rect=(x,y,w,h,fill,rx=3,stroke='none',sw=1)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+const line=(x1,y1,x2,y2,color='#e9cd9c',w=2)=>`<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/>`;
+function boxArt(x=55,y=122,w=130,h=82){return `${rect(x,y,w,h,'#b7956f',5,'#604c53',3)}${path(`M${x} ${y} L${x+18} ${y-16} L${x+w+10} ${y-16} L${x+w} ${y}`,'#dbb083','#604c53',2)}${line(x+18,y,x+18,y+h,'#e6b98c',2)}${rect(x+28,y+25,80,32,'#745f60',6)}`}
+function bowlArt(x=129,y=176,fill=true){return `${ellipse(x,y+12,52,16,'#c7a2b5',svgStroke,2)}${path(`M${x-53} ${y-2} Q${x-50} ${y+35} ${x} ${y+35} Q${x+50} ${y+35} ${x+53} ${y-2}Z`,'#d8a3ad',svgStroke,2)}${ellipse(x,y-2,52,15,'#e6d7d0',svgStroke,2)}${fill?ellipse(x,y-3,36,7,'#9f684c'):ellipse(x,y-4,36,7,'#b6bdc3')}`}
+function windowArt(){return `${rect(16,18,206,155,'#3c506a',6,'#d6b98b',6)}${rect(24,26,190,139,'#667c9b',3)}${ellipse(173,65,19,19,'#eddba8')}${path('M35 151Q83 91 121 148Q169 104 211 141V163H25Z','#52727a','none')}${line(119,21,119,171,'#e2c99e',7)}${line(20,95,217,95,'#e2c99e',6)}${rect(11,167,216,10,'#bda381',3)}`}
+function doorArt(){return `${rect(57,15,127,188,'#222a42',4,'#d8b583',6)}${path('M64 23 L160 33 L160 190 L64 195 Z','#d3b48a','#ae8d6b',3)}${path('M160 33L197 18V184L160 190Z','#f7d6a1','#d4ad74',2)}${ellipse(141,112,4,4,'#65506a')}${path('M196 20L235 0V216L196 183Z','#ebd5b476','none')}`}
+function tinArt(){return `${ellipse(122,157,57,17,'#f0d18d','#715e66',2)}${rect(65,111,114,49,'#d8b363',3,'#715e66',2)}${ellipse(122,109,57,15,'#f7d79a','#715e66',2)}${ellipse(120,109,43,10,'#92715c')}${path('M116 109 Q117 84 147 75 Q172 67 179 42','none','#f8e6bc',5)}${rect(98,132,49,20,'#f9e3a9',10)}<text x="122" y="146" text-anchor="middle" font-size="12" fill="#73576e">♥</text>`}
+function floorArt(){return `${ellipse(119,192,103,16,'#0a1627', 'none')}${path('M0 192 Q120 183 240 192','none','#ead1a361',2)}`}
+function sceneSvg(card){
+ const c=card,id=c.id,g=c.group,palette=['#456374','#544f78','#70566c','#74634d'][g],coat=coats[(id*7)%coats.length];
+ let art='',base=floorArt();
+ const C=(x=120,y=100,s=1,pose='sit',color=coat,opt={})=>catFigure(x,y,s,pose,color,opt);
+ const star=path('M195 26 L199 37 L210 40 L199 43 L195 54 L191 43 L180 40 L191 37 Z','#eacb8e','none');
+ switch(id){
+ case 1:art=`${ellipse(196,183,16,7,'#cbbd9e')}${ellipse(198,175,11,7,'#d7c9b1')}${path('M209 177Q230 155 229 176','none','#e3d6b4',2)}${C(105,110,.89,'crouch')}${path('M36 52Q64 44 80 53','none','#f4d49b',3)}`;break;
+ case 2:art=`${rect(16,142,208,16,'#c3a17b',2)}${rect(25,155,16,37,'#d8b68c')}${rect(47,155,22,37,'#859bad')}${rect(75,155,17,37,'#de9f97')}${rect(105,155,20,37,'#edd0a0')}${rect(154,155,18,37,'#bca9c9')}${C(116,53,.65,'sit')}${path('M30 28L30 139','none','#e2c79a',3)}`;break;
+ case 3:art=`${ellipse(121,179,100,28,'#f3b9ac')}${path('M47 176Q95 144 195 178','none','#ffe1cf',5)}${C(114,100,.85,'loaf',coat,{eyes:'closed'})}${ellipse(80,158,12,8,'#f0c59f')}${ellipse(155,158,12,8,'#f0c59f')}`;break;
+ case 4:art=`${ellipse(123,164,100,33,'#ac9fcc')}${C(120,103,.95,'belly',coat,{eyes:'closed'})}<text x="184" y="67" fill="#f6ddaf" font-size="22" font-family="serif">Z z</text>`;break;
+ case 5:art=`${rect(155,63,39,140,'#b58f72',5,'#6d5560',2)}${Array.from({length:8},(_,i)=>line(164,76+i*15,186,67+i*15,'#f3d19b',2)).join('')}${C(92,109,.76,'sit')}${path('M111 108Q150 92 165 105','none',coat,13)}`;break;
+ case 6:art=`${ellipse(189,63,9,9,'#f07683')}${ellipse(189,63,17,17,'#f0768355')}${C(104,113,.81,'jump')}${path('M55 169L45 185M80 167L72 187','none','#eed4a5',4)}`;break;
+ case 7:art=`${C(112,122,.72,'sit')}${boxArt(42,119,158,89)}${ellipse(103,153,6,7,'#f7d69c')}${ellipse(134,153,6,7,'#f7d69c')}`;break;
+ case 8:art=`${C(128,108,.89,'jump')}${line(25,85,60,85,'#ead19c',3)}${line(24,113,48,113,'#ead19c',3)}${line(35,143,68,143,'#ead19c',3)}${star}`;break;
+ case 9:art=`${C(113,104,.84,'groom')}${path('M176 95Q187 79 197 89','none','#e9d7b2',3)}${ellipse(176,76,4,4,'#efcb9e')}`;break;
+ case 10:art=`${ellipse(113,183,101,32,'#a6abc7')}${C(110,94,.93,'sleep')}${path('M175 54Q184 36 198 54Q211 36 218 54Q218 68 196 78Q177 68 175 54Z','#e6a5bc','none')}`;break;
+ case 11:art=`${ellipse(111,143,60,43,coat,svgStroke,3)}${path('M59 119L45 99L68 101L57 78L82 91L93 70L109 85L124 66L135 85L155 72L158 97L181 98L164 118','none','#f6dcbb',8)}${catHead(113,85,.95,coat,'open')}${path('M183 43L171 65L193 65L181 88','none','#f8d292',5)}`;break;
+ case 12:art=`${C(124,112,.92,'sit',coat,{ears:'flat'})}${path('M38 53Q51 33 64 53','none','#b9c3da',5)}${ellipse(45,72,4,9,'#b6d3dc')}`;break;
+ case 13:art=`${windowArt()}${C(120,133,.52,'back')}${path('M177 57Q186 46 196 56 M191 55Q198 49 206 54','none','#333f57',3)}`;break;
+ case 14:art=`${C(119,101,1.05,'sit',coat,{eyes:'closed'})}${path('M181 45Q185 35 195 41Q206 35 209 45Q209 55 195 66Q183 58 181 45Z','#efabc1','none')}`;break;
+ case 15:art=`${C(117,106,.97,'sit',coat,{ears:'flat'})}${path('M100 119L106 127L113 119 M131 119L138 127L145 119','none','#fff4de',3)}${path('M174 67L195 56L187 74L205 77L188 84','none','#f1d29d',4)}`;break;
+ case 16:art=`${C(116,107,.95,'belly')}${path('M174 72Q196 60 208 75','none','#f1d29d',3)}${ellipse(207,76,6,5,'#d9b99c')}`;break;
+ case 17:art=`${C(114,102,.98,'sit',coat,{blep:true})}${ellipse(191,52,9,9,'#efd6ad')}${path('M195 31Q196 20 202 16','none','#efd6ad',3)}`;break;
+ case 18:art=`${rect(0,0,240,220,'#1d2b46',0)}${ellipse(117,114,94,81,'#303b63')}${C(119,107,.92,'sit','#41485f',{eyes:'glow'})}${ellipse(32,45,2,2,'#efdbb4')}${ellipse(217,68,2,2,'#efdbb4')}`;break;
+ case 19:art=`${C(85,117,.68,'sit','#e9ba8a',{eyes:'closed'})}${C(160,117,.69,'sit','#d9d7d2',{eyes:'closed'})}${path('M108 78Q124 67 138 80','none','#fbe3ca',4)}${path('M112 41Q120 29 128 41Q138 31 146 43Q139 54 129 62Q115 53 112 41Z','#e6a9bf','none')}`;break;
+ case 20:art=`${C(82,113,.69,'sit','#e2be9c')}${C(156,113,.69,'sit','#aebbd0')}${path('M108 169Q123 143 132 168','none','#f6d5ab',8)}`;break;
+ case 21:art=`${rect(171,57,29,125,'#c7a078',3)}${rect(157,46,56,15,'#ead0ad',3)}${C(108,115,.72,'sit')}${path('M135 92Q154 71 169 88','none','#f7d8aa',6)}${path('M147 62Q152 49 161 56','none','#f7d8aa',2)}`;break;
+ case 22:art=`${C(90,122,.68,'sit','#e9ba8a')}${C(157,122,.68,'back','#aebcd4')}${path('M112 185Q121 182 132 185','none','#f9d8ae',3)}`;break;
+ case 23:art=`${C(89,100,.66,'sit','#f3cb99')}${C(156,100,.65,'sit','#abb9cc')}${boxArt(37,130,176,79)}${path('M111 141L126 141','none','#f9e3bc',3)}`;break;
+ case 24:art=`${rect(173,22,24,160,'#e0b1a3',6)}${rect(168,167,40,22,'#4b5976',7)}${C(102,110,.72,'sit')}${path('M119 136Q156 112 165 120','none',coat,12)}`;break;
+ case 25:art=`${rect(35,9,170,202,'#28344e',2,'#d8b68c',5)}${path('M36 14L139 20L139 197L36 204Z','#baa084','#795e64',3)}${C(159,117,.64,'sit')}${rect(144,15,10,187,'#e3c9a6',0)}`;break;
+ case 26:art=`${C(55,124,.54,'loaf','#e9b788')}${C(120,124,.54,'loaf','#ced2d8')}${C(186,124,.54,'loaf','#bca5a6')}${star}`;break;
+ case 27:art=`${C(115,117,.79,'back')}${path('M198 35Q177 74 195 100L174 128','none','#e5b5a6',15)}${path('M176 127L163 142','none','#e5b5a6',9)}${path('M74 44Q68 33 79 26','none','#e7cfab',3)}`;break;
+ case 28:art=`${tinArt()}${C(56,102,.49,'sit','#e1bd92')}${star}`;break;
+ case 29:art=`${C(66,112,.68,'sit')}${bowlArt(164,168,false)}${path('M78 44Q84 32 91 44','none','#f0d2a3',3)}`;break;
+ case 30:art=`${C(70,103,.69,'sit')}${path('M134 101L154 91L183 139L166 149Z','#b9d8e0','#d4eef0',3)}${ellipse(188,175,46,12,'#94cee7aa')}${path('M184 150Q177 129 190 124 M198 164L213 144','none','#aedee7',5)}`;break;
+ case 31:art=`${path('M240 0L61 0L14 211L240 211Z','#f8de9d65','none')}${ellipse(127,181,97,29,'#f6df9a73')}${C(119,104,.94,'sleep',coat,{eyes:'closed'})}${ellipse(201,32,22,22,'#f7dc93')}`;break;
+ case 32:art=`${C(116,100,.69,'sit')}${path('M16 163Q60 94 104 167T198 160Q223 134 230 163','none','#d4a4d3',5)}${path('M28 194Q89 116 127 196T227 191','none','#a6d4c7',6)}${ellipse(40,177,16,15,'#d4a4d3')}${ellipse(202,183,18,17,'#a6d4c7')}${path('M36 167Q45 178 38 188 M197 172Q206 182 198 192','none','#fce4dd',2)}`;break;
+ case 33:art=`${doorArt()}${C(91,123,.56,'back')}${path('M203 43L210 34L216 43','none','#f7dba9',3)}`;break;
+ case 34:art=`${C(115,112,.87,'sit')}${path('M123 122Q153 108 161 135Q138 145 123 122Z','#a5d1ad','#466d5b',2)}${path('M127 127L151 135','none','#5f8463',2)}${star}`;break;
+ case 35:art=`${ellipse(116,172,109,30,'#ac9dc5')}${C(120,93,.92,'belly',coat,{blep:true})}${ellipse(194,136,17,12,'#87b997')}${path('M188 132L184 123M199 132L205 120','none','#528d68',3)}${path('M39 67Q51 40 64 65Q69 84 50 91Z','#ebb6ca','none')}`;break;
+ case 36:art=`${rect(17,132,210,75,'#879ab4',9,'#3c4c63',3)}${rect(26,141,190,46,'#d6c3ab',6)}${C(112,89,.74,'back')}${path('M168 132Q185 119 201 129 M168 144Q187 133 202 140','none','#b89b84',5)}${ellipse(168,169,26,13,'#baa690')}`;break;
+ }
+ return `<svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeHtml(c.scene)}"><rect width="240" height="220" fill="${palette}"/><circle cx="195" cy="35" r="74" fill="#ffffff" opacity=".075"/><circle cx="42" cy="188" r="71" fill="#0d2036" opacity=".13"/><circle cx="26" cy="29" r="2" fill="#ffe8be" opacity=".65"/><circle cx="212" cy="85" r="1.8" fill="#ffe8be" opacity=".65"/>${base}${art}<rect x="5" y="5" width="230" height="210" rx="10" fill="none" stroke="#e6d7b6" opacity=".3" stroke-width="1.3"/></svg>`;
+}
+const topicName=topic=>(topics.find(x=>x[0]===topic)||topics[0])[1];
+const toneMeaning={good:'順勢能量',warning:'提醒能量',neutral:'轉化能量'};
+const pairSamples={
+'1-6':'行動力值得肯定，但先辨別目標是真正想要的，還是看似閃亮卻抓不住的幻想。',
+'2-29':'當精力或資源不足，先拉開距離重新盤點，比勉強硬撐更能找出出口。',
+'2-33':'先看清全局，再決定是否跨越新的門檻；機會可以探索，不必倉促投入。',
+'3-29':'透過熟悉而安穩的小事，慢慢替耗盡的身心補回能量。',
+'4-8':'想做的事很多，也要替衝動留下一點休息和整理的空間。',
+'5-15':'從感到不舒服，到勇敢表達底線；拒絕也是照顧自己的方式。',
+'7-33':'暫時退回安全之處，是為了更有力量地走向下一扇門。',
+'10-31':'內心的滿足與外界的溫暖相呼應，珍惜讓你安定的小確幸。',
+'11-14':'戒備與善意同時存在，先辨認真正的威脅，再試著用溫和態度靠近。',
+'12-15':'忍耐過頭的委屈，可能正提醒你該清楚說出一個「不」。',
+'13-33':'對遠方的渴望，正與新的可能相遇；先看看門外，再選擇步伐。',
+'14-19':'溫柔的善意若得到雙向回應，便有機會長成互相支持的關係。',
+'16-25':'若即若離與謹慎觀察交會，表示信任值得慢慢建立，而非一次交出全部。',
+'17-32':'思緒和資訊同時打結時，停止逼自己立刻得出答案，會更有效率。',
+'19-22':'彼此在乎，不代表沒有獨處的需要；留白可能讓互動更自在。',
+'20-27':'明明彼此靠近，卻未必說出心意；多一點坦率有助於維持默契。',
+'23-26':'群體中的資源爭執，需要先找出共同的節奏與可以協商的規則。',
+'24-34':'主動伸出手，有機會讓他人的好意以意想不到的形式出現。',
+'28-29':'一邊迎接收穫，一邊正視耗損；眼前的好消息未必能取代長期的補給。',
+'28-31':'好運與溫暖互相映照，試著心安理得地接受值得珍惜的成果。',
+'29-33':'資源不足的感受，也可能成為尋找新選項的起點；但仍要先盤點現實條件。',
+'30-33':'計畫被意外打亂，可能迫使你發現一條原本沒注意到的路。',
+'32-36':'先釐清哪些問題值得處理，哪些已經可以放下；不必帶著所有線團前進。',
+'13-36':'向遠方的期待與對過去的告別同時出現，提醒你為新階段騰出空間。',
+'18-25':'敏銳與謹慎相互加強，但直覺仍值得搭配實際觀察來確認。'
+};
+function pairKey(a,b){return [a.id,b.id].sort((x,y)=>x-y).join('-')}
+function pairText(a,b){
+ const fixed=pairSamples[pairKey(a,b)];if(fixed)return fixed;
+ const aa=a.keys[0],bb=b.keys[0];
+ if(a.tone==='warning'&&b.tone==='warning')return `「${aa}」與「${bb}」兩個提醒同時出現，先別急著推進。辨認最需要處理的問題，再一次解開一個結。`;
+ if(a.tone==='good'&&b.tone==='good')return `「${aa}」能與「${bb}」互相支持。留意這份順勢的條件，讓好的循環繼續，而不是把成果視為理所當然。`;
+ if(a.tone==='warning'&&b.tone==='good')return `「${aa}」是眼前需要正視的提醒；「${bb}」則是可能利用的支持。先處理阻礙，才能更穩地接住機會。`;
+ if(a.tone==='good'&&b.tone==='warning')return `「${aa}」提供了可運用的力量，但「${bb}」仍值得留意。欣賞機會的同時，也要留出防範和調整的空間。`;
+ if(a.tone==='neutral'&&b.tone==='warning')return `從「${aa}」走向「${bb}」，提醒你在調整節奏時看清風險。先認識局勢，再決定何時採取行動。`;
+ if(a.tone==='warning'&&b.tone==='neutral')return `「${aa}」可能讓人不安，而「${bb}」提供另一種看待問題的角度。試著將擔心轉化為具體的下一步。`;
+ if(a.tone==='neutral'&&b.tone==='good')return `當「${aa}」得到「${bb}」的支持，表示一段觀察與調整有機會慢慢累積成果。`;
+ if(a.tone==='good'&&b.tone==='neutral')return `「${aa}」是有利的起點；「${bb}」提醒你保持彈性，不必急著把所有可能定型。`;
+ return `「${aa}」與「${bb}」形成雙重線索：這個問題可能沒有唯一答案，給自己觀察、調整與重新選擇的空間。`;
+}
+const topicFocus={
+ general:['採取行動或暫時停下的節奏','內心真正的感受','你與周遭人的距離','現實條件與變化'],
+ love:['是否主動表達或保留空間','情緒安全感與內在期待','互動中的互惠與界線','關係正在面對的現實條件'],
+ work:['執行策略與行動時機','工作壓力與真正的動力','合作、分工和職場界線','資源、機會與變動'],
+ money:['實際決策與風險控制','面對匱乏或富足的心態','資源往來與彼此的期待','收入、支出與可用機會'],
+ self:['生活習慣和行動模式','感受、需求及直覺','支持系統和個人界線','生活環境與改變的契機']
+};
+function perspective(card,topic){return (topicFocus[topic]||topicFocus.general)[card.group]}
+function roleInterpretation(card,role,topic){
+ const focus=perspective(card,topic),key=card.keys.join('、');
+ const intro={
+ '此刻的提醒':`在「${focus}」方面，這張牌邀請你留意「${key}」。`,
+ '當下現況':`目前可以先觀察「${focus}」；「${key}」可能是這段處境的主旋律。`,
+ '關鍵影響':`正在影響你判斷的，也許是「${focus}」所反映的「${key}」。`,
+ '行動指引':`下一步適合把「${key}」化為可實踐的選擇，尤其是在「${focus}」上。`,
+ '現在的你':`你此刻可能正經驗與「${focus}」有關的「${key}」。`,
+ '隱藏因素':`留意那些還沒有說清楚、但與「${focus}」有關的「${key}」。`,
+ '主要阻礙':`此處值得檢視的考驗是「${key}」；它不必然是壞事，但需要被看見。`,
+ '可用資源':`可以試著把「${key}」當作調整局勢的切入點，思考可用的支持。`,
+ '下一步方向':`你可以從「${key}」開始，以小步驟摸索更適合自己的方向。`
+ }[role]||`留意「${key}」。`;
+ return intro+' '+card.advice;
+}
+function overviewFor(picks,topic){
+ const prefix={general:'關於你心中的這件事',love:'關於感情與親密關係',work:'關於工作與發展',money:'關於金錢與資源',self:'關於自我照顧與成長'}[topic]||'關於你心中的問題';
+ if(picks.length===1){const c=picks[0];return `${prefix}，「${c.name}」將焦點帶向「${c.keys[0]}」。這不是對未來的定論，而是一個可以用來整理想法的象徵。${c.advice}`}
+ if(picks.length===3){const [a,b,c]=picks;return `${prefix}，目前的主題圍繞著「${a.keys[0]}」；「${b.name}」提醒你留意「${b.keys[0]}」的影響。最後，「${c.name}」把行動方向引向「${c.keys[0]}」。把這三段訊息放在一起，可以幫助你分辨當下的感受、阻礙與選擇。`}
+ const [a,b,c,d,e]=picks;return `${prefix}，「${a.name}」提示當前重心，「${b.name}」帶出未被充分注意的部分，而「${c.name}」讓阻礙浮現。你可以參考「${d.name}」所象徵的資源，再以「${e.name}」的提醒思考下一步。牌陣描繪的是可能的思考路徑，而不是已經注定的結局。`;
+}
+function reflectionFor(picks){const c=picks[picks.length-1];const options=[
+ `如果真的把「${c.keys[0]}」帶進明天，你願意先做哪一件小事？`,
+ `你是否願意正視「${c.keys[0]}」，而不是急著追求唯一的答案？`,
+ `不替你決定對錯，只想問你：什麼選擇會讓自己更安心？`
+ ];return options[c.id%3]}
+function readingText(picks,topic,mode,question){
+ let lines=[`貓咪直覺神諭卡｜${modes[mode][0]}`,`提問：${question||'今天，我需要留意什麼？'}`];
+ picks.forEach((c,i)=>lines.push(`${modes[mode][1][i]}｜${num(c.id)} ${c.name}\n${roleInterpretation(c,modes[mode][1][i],topic)}`));
+ if(picks.length>1){lines.push('卡牌之間的訊息');for(let i=0;i<picks.length-1;i++)lines.push(`${picks[i].name} × ${picks[i+1].name}：${pairText(picks[i],picks[i+1])}`)}
+ lines.push('整體解讀：'+overviewFor(picks,topic));lines.push('貓咪的心聲：'+picks[picks.length-1].quote);lines.push('留給你的提問：'+reflectionFor(picks));return lines.join('\n\n');
+}
+// 正式卡圖讀取方式：將 card01.png / card02.jpg / card03.jpeg ... 放在 HTML 相同資料夾。
+// Chrome 不允許一般網頁直接列出檔案夾，故依序嘗試支援的副檔名，不需要伺服器 API。
+const imageExtensions=['png','jpg','jpeg','PNG','JPG','JPEG'];
+const cardImageCache=new Map();
+function lookupCardImage(cardId,done){
+ let item=cardImageCache.get(cardId);
+ if(item){
+  if(item.status==='loading')item.callbacks.push(done);
+  else done(item.src);
+  return;
+ }
+ item={status:'loading',src:null,callbacks:[done]};
+ cardImageCache.set(cardId,item);
+ let at=0;
+ function finish(url){
+  item.src=url;item.status=url?'found':'missing';
+  const callbacks=item.callbacks.splice(0);
+  callbacks.forEach(cb=>cb(url));
+ }
+ function next(){
+  if(at>=imageExtensions.length){finish(null);return}
+  const path=`card${num(cardId)}.${imageExtensions[at++]}`;
+  const probe=new Image();
+  probe.onload=()=>finish(path);
+  probe.onerror=next;
+  probe.src=path;
+ }
+ next();
+}
+function cardArt(c){
+ // 保留原 SVG：只有在正式圖檔確定存在且載入成功後，才覆蓋示意插畫。
+ return `<div class="art" data-card-id="${c.id}">${sceneSvg(c)}<img class="external-card-image" alt="${escapeHtml(c.name)} 的正式卡圖" loading="lazy" decoding="async"></div>`;
+}
+function hydrateCardImages(root=document){
+ root.querySelectorAll('.art[data-card-id]').forEach(el=>{
+  if(el.dataset.imageBound==='1')return;
+  el.dataset.imageBound='1';
+  const img=el.querySelector('.external-card-image');
+  if(!img)return;
+  lookupCardImage(Number(el.dataset.cardId),url=>{
+   if(!url||!img.isConnected)return;
+   const show=()=>{if(!img.isConnected)return;el.classList.add('has-external');const svg=el.querySelector('svg');if(svg)svg.setAttribute('aria-hidden','true')};
+   img.addEventListener('load',show,{once:true});
+   img.addEventListener('error',()=>el.classList.remove('has-external'),{once:true});
+   img.src=url;
+   if(img.complete&&img.naturalWidth>0)show();
+  });
+ });
+}
+function logoSvg(){return `<svg viewBox="0 0 110 105" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#e8cb90" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 51L16 11L38 30Q55 22 72 30L94 11L95 51Q94 89 55 89Q16 89 15 51Z"/><path d="M20 20L28 33M90 20L82 33"/><path d="M35 54Q41 48 47 54M63 54Q69 48 75 54M50 67L55 72L60 67M55 72V77M55 77Q47 82 43 75M55 77Q63 82 67 75"/><path d="M27 71L7 65M27 76L5 78M83 71L103 65M83 76L105 78"/><path d="M55 4V14M50 9H60"/></svg>`}
+function header(){return `<div class="stars"></div><header class="topbar"><div class="brand"><div class="mark" aria-hidden="true">☾</div><div><div class="brand-name">貓咪直覺神諭卡</div><div class="brand-sub">36 CATS ORACLE</div></div></div><span class="top-pill">✦ 36 張命運牌</span></header>`}
+function setupView(){return `
+ <div class="eyebrow">⋆˚✦　THE CAT KNOWS　✦˚⋆</div>
+ <h1 class="heading serif">今天，聽聽貓咪<br>想對你說什麼</h1>
+ <p class="intro">36 張貓咪神諭卡，將生活裡的每個小動作，<br>變成一份溫柔的直覺提醒。</p>
+ <div class="hero-art"><div class="halo"></div><div class="orbit"></div><div class="hero-back1"></div><div class="hero-back2"></div><div class="hero-card">${logoSvg()}</div></div>
+ <section class="panel" aria-label="開始占卜設定">
+ <label class="form-label" for="question">✧ 想向貓咪提出什麼問題？</label>
+ <textarea id="question" placeholder="例如：我現在適合轉換工作方向嗎？\n也可以留白，領取今天的直覺啟示。" maxlength="240">${escapeHtml(state.question)}</textarea>
+ <div class="section-label" style="margin:14px 1px 5px">提問主題</div>
+ <div class="chips">${topics.map(([key,name])=>`<button class="chip ${key===state.topic?'active':''}" data-action="topic" data-topic="${key}" aria-pressed="${key===state.topic}">${name}</button>`).join('')}</div>
+ <div class="section-label">選擇牌陣</div>
+ <div class="mode-grid">${[1,3,5].map(n=>`<button class="mode ${state.mode===n?'active':''}" data-action="mode" data-mode="${n}" aria-pressed="${state.mode===n}"><div class="mode-symbol">${n===1?'✦':n===3?'✦ ✦ ✦':'✧ ✦ ✧'}</div><div class="mode-title">${n} 張牌</div><div class="mode-sub">${['', '當下啟示','','命運連線','','命運十字'][n]}</div></button>`).join('')}</div>
+ <div class="space"></div><button class="primary" data-action="start">開始洗牌　✦</button>
+ <p class="hint center" style="margin:11px 0 0">請靜下心來，選擇最吸引你的牌。</p>
+ </section>
+ <p class="note">這是一款結合象徵聯想與自我反思的療癒遊戲，<br>牌卡不是確定的未來預言，也不代替重要的現實判斷。</p>`}
+function selectionTray(){return Array.from({length:state.mode},(_,i)=>`<div class="picked-slot ${i<state.selected.length?'filled':''}" aria-label="${i<state.selected.length?'已選擇':'空白'}第${i+1}張">${i<state.selected.length?'✦':i+1}</div>`).join('')}
+function pickView(){return `
+ <div class="eyebrow">THE DECK IS IN YOUR HANDS</div>
+ <h1 class="heading-sm serif">命運，藏在貓掌之間</h1>
+ <p class="intro">36 張卡牌已重新洗好。<br>依照第一直覺，點選 <b style="color:var(--gold)">${state.mode}</b> 張命運牌。</p>
+ ${state.question?`<div class="status-banner">你的提問：${escapeHtml(state.question)}</div>`:''}
+ <div class="progress-bar"><div id="progress-fill" style="width:${state.selected.length/state.mode*100}%"></div></div>
+ <div class="deck-count" aria-live="polite">已選擇 <b id="selected-count">${state.selected.length}</b> / ${state.mode} 張</div>
+ <div class="picked-strip" id="selection-tray">${selectionTray()}</div>
+ <div class="deck-grid" aria-label="36 張面朝下的神諭卡">${state.deck.map((cardId,i)=>`<button class="pick-card ${state.selected.includes(cardId)?'selected':''}" data-action="pick" data-id="${cardId}" aria-label="選取第 ${i+1} 個卡牌位置" aria-pressed="${state.selected.includes(cardId)}"><span class="paw" aria-hidden="true">♣</span></button>`).join('')}</div>
+ <button id="reveal-btn" class="primary" data-action="reveal" ${state.selected.length===state.mode?'':'disabled'}>揭開貓咪的啟示　✧</button>
+ <div style="display:flex;justify-content:space-evenly;margin:9px 0 0"><button class="line-link" data-action="clear-pick">重新選牌</button><button class="line-link" data-action="reshuffle">重新洗牌</button></div>
+ <p class="note">每一次都從 36 張牌中不重複抽取。<br>點選已選取的卡牌可取消選擇。</p>`}
+function faceCard(c,i,role){return `<button class="face-item" data-action="detail" data-id="${c.id}" style="--delay:${i*120}ms" aria-label="查看 ${c.name} 的完整牌義"><div class="face-number">NO. ${num(c.id)}</div>${cardArt(c)}<div class="face-name">${escapeHtml(c.name)}</div><div class="face-role">${escapeHtml(role)}</div></button>`}
+function resultView(){const picks=state.result,roles=modes[state.mode][1];if(!picks.length)return setupView();
+ const pairBlocks=picks.slice(0,-1).map((a,i)=>`<div class="pair-block"><div class="pair-name">${escapeHtml(a.name)}　×　${escapeHtml(picks[i+1].name)}</div>${escapeHtml(pairText(a,picks[i+1]))}</div>`).join('');
+ return `<div class="eyebrow">✧ YOUR CAT ORACLE ✧</div><h1 class="heading-sm serif">貓咪的命運啟示</h1>
+ <div class="center"><span class="topic-flag">${escapeHtml(topicName(state.topic))} ・ ${state.mode} 張牌</span></div>
+ <p class="intro" style="margin-top:10px">${state.question?`「${escapeHtml(state.question)}」`:'「今天，我需要留意什麼？」'}</p>
+ <div class="face-grid ${picks.length===1?'one':''}">${picks.map((c,i)=>faceCard(c,i,roles[i])).join('')}</div>
+ <p class="hint center">輕觸卡牌，可放大查看畫面與完整牌義。</p>
+ <div class="ornament"></div>
+ <section class="read-block"><div class="read-title">✦　每張牌想告訴你</div>${picks.map((c,i)=>`<div class="role-block"><div class="role-head"><span class="role-count">${i+1}</span><strong>${escapeHtml(c.name)}</strong><span>· ${escapeHtml(roles[i])}</span></div><p>${escapeHtml(roleInterpretation(c,roles[i],state.topic))}</p></div>`).join('')}</section>
+ ${picks.length>1?`<div class="space-sm"></div><section class="read-block"><div class="read-title">✦　卡牌之間的悄悄話</div>${pairBlocks}</section>`:''}
+ <div class="space-sm"></div><section class="read-block"><div class="read-title">✦　屬於你的整體啟示</div><p>${escapeHtml(overviewFor(picks,state.topic))}</p><div class="summary-quote">「${escapeHtml(picks[picks.length-1].quote)}」</div><p><strong style="color:#f0d4a1">留給你的問題：</strong>${escapeHtml(reflectionFor(picks))}</p></section>
+ <div class="space"></div><div class="result-actions" aria-label="占卜操作"><button class="secondary" data-action="copy">複製解讀文字</button><button class="primary" data-action="restart">再次抽牌　✦</button></div>
+ <p class="note">貓咪指引提供的是探索角度，不代表確定事件或必然結果。<br>涉及醫療、財務等重要選擇，請以專業資訊和現實條件為準。</p>`}
+function render(){document.getElementById('app').innerHTML=header()+`<main>${state.stage==='setup'?setupView():state.stage==='pick'?pickView():resultView()}</main>`;hydrateCardImages()}
+function topScroll(){window.scrollTo({top:0,behavior:'instant'})}
+function showToast(message){document.querySelectorAll('.toast').forEach(el=>el.remove());let el=document.createElement('div');el.className='toast';el.textContent=message;document.body.appendChild(el);setTimeout(()=>el.remove(),2600)}
+function start(){const q=document.getElementById('question');state.question=q?q.value.trim():state.question.trim();state.deck=shuffle(cards.map(c=>c.id));state.selected=[];state.stage='pick';render();topScroll()}
+function syncSelection(){const n=state.selected.length;document.getElementById('selected-count').textContent=n;document.getElementById('progress-fill').style.width=`${n/state.mode*100}%`;document.getElementById('selection-tray').innerHTML=selectionTray();document.getElementById('reveal-btn').disabled=n!==state.mode;document.querySelectorAll('.pick-card').forEach(el=>{const s=state.selected.includes(+el.dataset.id);el.classList.toggle('selected',s);el.setAttribute('aria-pressed',String(s))});if(n===state.mode)showToast('喵～卡牌都選好了！可以翻牌囉 ✦')}
+function pick(id){if(state.selected.includes(id))state.selected=state.selected.filter(v=>v!==id);else if(state.selected.length<state.mode)state.selected.push(id);else{showToast('已選滿卡牌，點選已選牌可取消喵');return}syncSelection()}
+function reveal(){if(state.selected.length!==state.mode)return;state.result=state.selected.map(getCard);state.stage='result';render();topScroll()}
+function openModal(html){document.querySelector('.modal-overlay')?.remove();const overlay=document.createElement('div');overlay.className='modal-overlay';overlay.innerHTML=`<section class="modal" role="dialog" aria-modal="true" aria-label="卡牌資訊"><div class="modal-grab"></div><button class="modal-close" data-action="close-modal" aria-label="關閉">×</button>${html}</section>`;document.body.appendChild(overlay);document.body.style.overflow='hidden';hydrateCardImages(overlay)}
+function closeModal(){document.querySelector('.modal-overlay')?.remove();document.body.style.overflow=''}
+function detail(id){const c=getCard(id);if(!c)return;const g=groups[c.group];openModal(`<div class="sheet-card-title"><div class="number">${num(c.id)}</div><div><div class="group">${escapeHtml(g.name)} ・ ${toneMeaning[c.tone]}</div><h3>${escapeHtml(c.name)}</h3></div></div><div class="modal-art">${cardArt(c)}</div><div class="pill-row">${c.keys.map(k=>`<span class="tag">${escapeHtml(k)}</span>`).join('')}</div><div class="hint-card"><strong>畫面意象</strong><p>${escapeHtml(c.scene)}</p></div><div class="hint-card"><strong>占卜指引</strong><p>${escapeHtml(c.advice)}</p></div><div class="cat-quote">「${escapeHtml(c.quote)}」</div><div class="space-sm"></div><button class="secondary" data-action="close-modal">回到卡牌</button>`)}
+async function copyReading(){const txt=readingText(state.result,state.topic,state.mode,state.question);let copied=false;try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(txt);copied=true}}catch(e){}if(!copied){const area=document.createElement('textarea');area.value=txt;area.style.cssText='position:fixed;opacity:0;left:0;top:0';document.body.appendChild(area);area.focus();area.select();try{copied=document.execCommand('copy')}catch(e){}area.remove()}showToast(copied?'解讀已複製到剪貼簿':'無法自動複製，請改為長按文字複製')}
+
+document.getElementById('app').addEventListener('click',event=>{
+ const b=event.target.closest('[data-action]');if(!b)return;
+ const action=b.dataset.action;
+ if(action==='topic'){state.topic=b.dataset.topic;render()}
+ else if(action==='mode'){state.mode=+b.dataset.mode;render()}
+ else if(action==='start')start();
+ else if(action==='pick')pick(+b.dataset.id);
+ else if(action==='reveal')reveal();
+ else if(action==='clear-pick'){state.selected=[];syncSelection()}
+ else if(action==='reshuffle'){state.deck=shuffle(state.deck);state.selected=[];render();showToast('喵！已重新洗牌 ✦')}
+ else if(action==='detail')detail(+b.dataset.id);
+ else if(action==='copy')copyReading();
+ else if(action==='restart'){state.stage='setup';state.selected=[];render();topScroll()}
+});
+document.getElementById('app').addEventListener('input',event=>{
+ if(event.target.id==='question')state.question=event.target.value;
+});
+document.addEventListener('click',e=>{if(e.target.classList.contains('modal-overlay')||e.target.closest('[data-action="close-modal"]'))closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+render();
+</script>
+</body>
+</html>
